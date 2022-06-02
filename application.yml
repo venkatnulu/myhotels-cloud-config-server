@@ -10,13 +10,11 @@ eureka:
 myhotel-microservices:
   hotel-inventory-service:
     endpoints:
-        base-uri: /api/v1/hotelinventory
-        get-all-hotel-inventories: /api/v1/hotelinventory
-        get-hotel-inventory: /api/v1/hotelinventory/hotel/{hotel_id}
-        get-hotel-room-inventory: /api/v1/hotelinventory/hotel/{hotel_id}/room/{room_number}
-        put-hotel-inventory-metadata: /api/v1/hotelinventory/hotel/{hotel_id}
-        put-hotel-room-inventory: /api/v1/hotelinventory/hotel/{hotel_id}/room/{room_number}
-        post-to-hotel-inventories: /api/v1/hotelinventory
-        post-hotel-room-inventory: /api/v1/hotelinventory/hotel/{hotel_id}/room
-        delete-hotel-inventory: /api/v1/hotelinventory/hotel/{hotel_id}
-        delete-hotel-room-inventory: /api/v1/hotelinventory/hotel/{hotel_id}/room/{room_number}
+      base-uri: /api/v1/hotelinventory
+      get-hotel-inventory: /hotel/{hotel_id}
+      get-hotel-room-inventory: /hotel/{hotel_id}/room/{room_number}
+      put-hotel-inventory-metadata: /hotel/{hotel_id}
+      put-hotel-room-inventory: /hotel/{hotel_id}/room/{room_number}
+      post-hotel-room-inventory: /hotel/{hotel_id}/room
+      delete-hotel-inventory: /hotel/{hotel_id}
+      delete-hotel-room-inventory: /hotel/{hotel_id}/room/{room_number}
