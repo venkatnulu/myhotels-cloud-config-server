@@ -21,15 +21,13 @@ myhotel-microservices:
   guest-service:
     endpoints:
       base-uri: /api/v1/guests
-      get-guest-profile: /guest/{guest_id}
-      get-guest-stays: /guest/{guest_id}/stays
-      get-guest-stay: /guest/{guest_id}/stays/stay/{stay_id}
-      get-guest-creditcards: /guest/{guest_id}/creditcards
-      get-guest-creditcard: /guest/{guest_id}/creditcards/card/{card_id}
-      post-guest-stay: /guest/{guest_id}/stays
-      post-guest-creditcard: /guest/{guest_id}/creditcards
-      delete-guest-stay: /guest/{guest_id}/stays/stay/{stay_id}
-      delete-guest-creditcard: /guest/{guest_id}/creditcards/card/{card_id}
-      put-guest-stay: /guest/{guest_id}/stays/stay/{stay_id}
-      put-guest-creditcard: /guest/{guest_id}/creditcards/card/{card_id}
+      get-guest-profile: /{guest_id}
+      get-guest-stay: /{guest_id}/stay/{stay_id}
+      get-guest-creditcard: /{guest_id}/card/{card_id}
+      post-guest-stay: /{guest_id}/stay
+      post-guest-creditcard: /{guest_id}/creditcard
+      delete-guest-stay: /{guest_id}/stay/{stay_id}
+      delete-guest-creditcard: /{guest_id}/card/{card_id}
+      put-guest-stay: /{guest_id}/stay/{stay_id}
+      put-guest-creditcard: /{guest_id}/card/{card_id}
    
