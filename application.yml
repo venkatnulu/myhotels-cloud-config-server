@@ -22,7 +22,7 @@ myhotel-microservices:
     endpoints:
       base-uri: /api/v1/guests
       get-guest-profile: /guest/{guest_id}
-      get-guest-username-password: /guest/{guest_id}
+      get-guest-username-password: /guest-authdetails/{guest_id}
       get-guest-stay: /guest/{guest_id}/stay/{stay_id}
       get-guest-creditcard: /guest/{guest_id}/card/{card_id}
       post-guest-stay: /guest/{guest_id}/stay
