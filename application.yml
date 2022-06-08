@@ -31,4 +31,8 @@ myhotel-microservices:
       delete-guest-creditcard: /guest/{guest_id}/card/{card_id}
       put-guest-stay: /guest/{guest_id}/stay/{stay_id}
       put-guest-creditcard: /guest/{guest_id}/card/{card_id}
+  reservation-service:
+    endpoints:
+      base-uri: /api/v1/reservations/
+      get-reservation: /reservation/{reservation_id}
    
