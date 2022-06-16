@@ -33,6 +33,6 @@ myhotel-microservices:
       put-guest-creditcard: /guest/{guest_id}/card/{card_id}
   reservation-service:
     endpoints:
-      base-uri: /api/v1/reservations/
+      base-uri: /api/v1/reservations
       get-reservation: /reservation/{reservation_id}
    
